@@ -20,7 +20,7 @@ public:
     DAT(){};
     DAT(const char* filename){
 
-        FILE * pFile=fopen(filename,"r+b");
+        FILE * pFile=fopen(filename,"rb");
         if(!pFile){
             fprintf(stderr,"[ERROR] DAT file %s not found\n",filename);
         }

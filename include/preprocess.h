@@ -98,7 +98,7 @@ public:
 	}
 
 	void setT2SMap(const char* filename){
-		FILE* pFile = fopen(filename, "r+b");
+		FILE* pFile = fopen(filename, "rb");
 		if(!pFile){
 			fprintf(stderr, "[ERROR] traditional Chinese to simplified Chinese : %s  data file not find ",filename);
 			return;
